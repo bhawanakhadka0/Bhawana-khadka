@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="pizza slices.jpg" alt="logo of pizza" />
+      <h1>Welcome </h1>
+    </header>
+    <main>
+      <form action="subscribe.php" method="get">
+        
+          <legend>Order your Pizza</legend>
+
+
+          <label for="email">Email-address</label>
+          <input type="email" id="emailAddress" placeholder="Enter your email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password"  placeholder="Enter your Password" required>
+          <label for="Contact No.">Contact No.</label><br>
+          <input type="Contact Number" id="Contact Number"  placeholder="Enter your Phone Number" required>
+
+<br>
+
+          <!-- Here we are adding the input field so, that user can enter the number of pizza they want to order -->
+          <label for="number">Number of Pizzas:</label><br>
+          <input type="number" id="number" name="number" class="full"/>
+          <br />
+
+          <!-- This is the code for option. here we have a label and option with the value-->
+          <label for="size">Size:</label>
+          <select id="size" name="size">
+            <option value="select">select</option> 
+            <option value="small">Small (6 slices)</option>
+            <option value="medium">Medium (8 slices)</option>
+            <option value="Large">Large (10 slices)</option>
+          </select>
+
+<br>
+
+
+
+          <!-- Shape of pizza-->
+          <div class="shape">
+          <label>Shape of Pizza:</label>
+          <input type="radio" id="round" value="round" name="shape" />
+          <label for="round">Round</label> 
+          <input type="radio" id="square" value="square" name="shape" /> 
+          <label for="s">Square</label> 
+        </div>
+<br>
+
+          <!--toppings-->
+          <div class="topp">
+          <label >Toppings:</label>
+          <input type="checkbox" id="Cheese" value="Cheese" name="topping" />
+          <label for="Cheese">Cheese</label> 
+          <input type="checkbox" id="Vegan toppings" value="Vegan toppings" name="topping" /> 
+          <label for="Vegan toppings">Vegan toppings</label> 
+          <input type="checkbox" id="Sausage" value="Sausage" name="topping" /> 
+          <label for="Sausage">Sausage</label> 
+          <input type="checkbox" id="garlic" value="garlic" name="topping" /> 
+          <label for="Garlic">Garlic</label> 
+          <input type="checkbox" id="Salami" value="Salami" name="topping" /> 
+          <label for="Salami">Salami</label> 
+        </div>
+<br>
+          <label>Crust Type:</label>
+          <select id="crust" name="crust">
+            <option value="Select">Select</option>
+             <option value="Deep-dish">Deep-Dish</option>
+            <option value="Pan Pizza">Pan Pizza</option>
+            <option value="Neapolitan">Neapolitan</option>
+            <option value="Detroit-Style">Detroit-Style</option>
+            <option value="Thin-crust">Thin-crust</option>
+          </select>
+          <br>
+          <label>Order Type:</label>
+          <input type="radio" id="takeout" value="takeout" name="type">
+          <label for="takeout">Take out</label> 
+          <input type="radio" id="delivery" value="delivery" name="type" /> 
+          <label for="delivery">Delivery</label>
+          <input type="radio" id="eatin" value="eatin" name="type" /> 
+          <label for="eatin">Eat-In</label> <br>
+
+
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+          <p><center> "The taste you will always remember"</center></p>
+
+        
+        </fieldset>
+      </form>
+    </main>
+    <div class="footer-text"></div>
+      <footer>HTML,CSS | 2024 Bhawana khadka | All rights reserved.</footer>
+    
+    
+  </body>
+</html>
